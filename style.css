@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  transform-style: preserve-3d;
+  perspective: 500px;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.container span {
+  width: 0.5vw;
+  height: 100%;
+  background: url('images/drcaneca-tech.png');
+  background-size: cover;
+  background: #002776;
+  border-top: 33.333vh solid #009c3b;
+  border-bottom: 33.333vh solid #ffdf00;
+}
+
+.drcaneca {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 50%;
+  /* transform: translate(-50%, -50%); */
+  z-index: 1000;
+  animation: animate 24s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  40% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}

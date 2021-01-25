@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dr Caneca Flag</title>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <img
+          src="images/drcaneca-tech.png"
+          alt="Logo dr caneca"
+          class="drcaneca"
+        />
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script>
+      for (let i = 1; i <= 200; i++) {
+        let bars = document.createElement('span');
+        document.querySelector('.container').appendChild(bars);
+      }
+
+      TweenMax.from('.container span', {
+        transform: 'translateZ(1000px)',
+        zIndex: 100,
+        delay: 1,
+        stagger: {
+          from: 'start',
+          amount: 5,
+        },
+      });
+
+      TweenMax.from('.drcaneca', 0.5, {
+        opacity: 0,
+        delay: 4.2,
+      });
+    </script>
+  </body>
+</html>
