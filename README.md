@@ -26,9 +26,9 @@ Usamos as seguintes linguagens
 
 - No Linux com o comando **$PWD** na pasta do projeto inicia o container do docker nesse projeto
 
-### Usada a Biblioteca Green Sock
+## Usada a Biblioteca Green Sock
 
-## CDN Abaixo
+### CDN Abaixo
 
 - [GreenSock](https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js)
 
